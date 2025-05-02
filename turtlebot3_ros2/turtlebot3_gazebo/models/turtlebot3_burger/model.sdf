@@ -38,6 +38,13 @@
             <scale>0.001 0.001 0.001</scale>
           </mesh>
         </geometry>
+        <material>
+          <!-- Color base gris (similar al acero) -->
+          <ambient>0.3 0.3 0.3 1.0</ambient>   <!-- Gris medio (ambiente) -->
+          <diffuse>0.6 0.6 0.6 1.0</diffuse>   <!-- Gris claro (difuso) -->
+          <specular>0.7 0.7 0.7 1.0</specular> <!-- Brillo metálico (alto para reflejos) -->
+          <emissive>0.0 0.0 0.0 0.0</emissive> <!-- Sin emisión de luz -->
+        </material>
       </visual>
     </link>
 
@@ -128,6 +135,13 @@
             <scale>0.001 0.001 0.001</scale>
           </mesh>
         </geometry>
+        <material>
+          <!-- Color azul acero (tono frío con brillo metálico) -->
+          <ambient>0.2 0.2 0.3 1.0</ambient>     <!-- Azul oscuro base -->
+          <diffuse>0.3 0.3 0.5 1.0</diffuse>     <!-- Azul grisáceo principal -->
+          <specular>0.8 0.8 0.9 1.0</specular>   <!-- Brillo frío (alto para reflejos) -->
+          <emissive>0.0 0.0 0.1 0.0</emissive>   <!-- Ligero toque azul en oscuridad -->
+        </material>
       </visual>
 
       <sensor name="hls_lfcd_lds" type="ray">
@@ -221,6 +235,13 @@
             <scale>0.001 0.001 0.001</scale>
           </mesh>
         </geometry>
+        <!-- Material negro (formato SDF) -->
+        <material>
+          <ambient>0.0 0.0 0.0 1.0</ambient>  <!-- Color ambiente (negro) -->
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>  <!-- Color difuso (negro) -->
+          <specular>0.1 0.1 0.1 1.0</specular> <!-- Brillo (gris oscuro) -->
+          <emissive>0.0 0.0 0.0 0.0</emissive> <!-- Sin emisión de luz -->
+        </material>
       </visual>
     </link>
 
@@ -279,8 +300,18 @@
             <scale>0.001 0.001 0.001</scale>
           </mesh>
         </geometry>
+        <!-- Material negro (formato SDF) -->
+        <material>
+          <ambient>0.0 0.0 0.0 1.0</ambient>  <!-- Color ambiente (negro) -->
+          <diffuse>0.0 0.0 0.0 1.0</diffuse>  <!-- Color difuso (negro) -->
+          <specular>0.1 0.1 0.1 1.0</specular> <!-- Brillo (gris oscuro) -->
+          <emissive>0.0 0.0 0.0 0.0</emissive> <!-- Sin emisión de luz -->
+        </material>
       </visual>
+
     </link>
+
+
 
     <link name='caster_back_link'>
       <pose>-0.081 0 -0.004 -1.57 0 0</pose>
